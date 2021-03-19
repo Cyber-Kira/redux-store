@@ -9,7 +9,7 @@ export default class BookstoreService {
     },
     {
       id: 2,
-      title: "release It!",
+      title: "Release It!",
       author: "Michael T. Nygard",
       price: 45,
       coverImage: "/Release-It.jpg",
