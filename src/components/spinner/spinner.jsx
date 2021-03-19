@@ -3,10 +3,11 @@ import "./spinner.css";
 
 const Spinner = () => {
   return (
-    <div className="loader book">
-      <figure className="page"></figure>
-      <figure className="page"></figure>
-      <figure className="page"></figure>
+    <div className="loadingio-spinner-ripple-c8b24vskdkb">
+      <div className="ldio-99aajqw2dcl">
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };
