@@ -1,20 +1,14 @@
 import React from "react";
 import { withBookstoreService } from "../hoc";
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import { HomePage, CartPage } from "../pages";
+import ShopHeader from "../shop-header/shop-header";
 
 const App = () => {
   return (
-    <>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/cart">Cart</Link>
-        </li>
-      </ul>
+    <main role="main" className="container">
+      <ShopHeader numItems={5} total={210} />
       <Switch>
         <Route exact path="/">
           <HomePage />
@@ -24,7 +18,7 @@ const App = () => {
           <CartPage />
         </Route>
       </Switch>
-    </>
+    </main>
   );
 };
 
