@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import {
-  onDecrease,
   bookAddedToCart,
   allBooksRemovedFromCart,
   bookRemovedFromCart,
@@ -67,7 +66,7 @@ const ShoppingCartTable = ({
   );
 };
 
-const mapStateToProps = ({ cartItems, orderTotal }) => {
+const mapStateToProps = ({ shoppingCart: { cartItems, orderTotal } }) => {
   return {
     items: cartItems,
     total: orderTotal,
